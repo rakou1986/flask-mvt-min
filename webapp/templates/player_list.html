@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}プレイヤーリスト{% endblock %}
+{% block body %}
+<table>
+  <tbody>
+    <tr>
+      <th>順位</th>
+      <th>レート</th>
+      <th>名前</th>
+      <th>参戦数</th>
+      <th>勝</th>
+      <th>敗</th>
+      <th>勝率</th>
+    </tr>
+    {% for player in players %}
+    <tr>
+      <td>1</p>
+      <td>1000</p>
+      <td>{{ player }}</p>
+      <td>20</p>
+      <td>10</p>
+      <td>10</p>
+      <td>50.0</p>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}
